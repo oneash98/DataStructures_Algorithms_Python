@@ -24,5 +24,3 @@ def searchInArray(array, value):
             return array.index(value)
     return "The element does not exist"
 
-print(searchInArray(arr1, 3))
-print(arr1.index(8))
