@@ -71,3 +71,16 @@ import copy
 
 new_list = copy.deepcopy(old_list)
 ```
+
+<br/>
+
+튜플의 경우에는 copy()메서드로 복사할 경우 주소값이 동일하다. 
+```python
+import copy
+
+old_tuple = (1, 2, 3)
+new_tuple = copy.copy(old_tuple)
+
+old_tuple is new_tuple
+>>> True
+```
