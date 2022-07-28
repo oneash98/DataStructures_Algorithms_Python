@@ -23,4 +23,3 @@ def searchInArray(array, value):
         if i == value:
             return array.index(value)
     return "The element does not exist"
-
