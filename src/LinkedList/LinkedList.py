@@ -50,7 +50,8 @@ class LinkedList:
             self.add(randint(min_value, max_value))
         return self
 
-linkedList = LinkedList()
-linkedList.generate(10, 0, 99)
-print(linkedList)
-print(len(linkedList))
+if __name__ == '__main__':
+    linkedList = LinkedList()
+    linkedList.generate(10, 0, 99)
+    print(linkedList)
+    print(len(linkedList))
