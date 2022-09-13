@@ -26,18 +26,14 @@ def inOrderTraversal(rootNode):
     inOrderTraversal(rootNode.rightChild)
 
 def search(rootNode, value):
+    if rootNode == None:
+        return "해당 값이 없습니다"
     if value == rootNode.value:
-        print(value)
+        return "찾았습니다"
     elif value <= rootNode.value:
-        if value == rootNode.leftChild.value:
-            print(value)
-        else:
-            search(rootNode.leftChild, value)
+        search(rootNode.leftChild, value)
     else:
-        if value == rootNode.rightChild.value:
-            print(value)
-        else:
-            search(rootNode.rightChild, value)
+        search(rootNode.rightChild, value)
 
 newBST = BSTNode(None)
 insertNode(newBST, 20)
@@ -48,4 +44,4 @@ insertNode(newBST, 5)
 insertNode(newBST, 30)
 insertNode(newBST, 1)
 
-print(search(newBST, 20))
+print(search(newBST, ))
